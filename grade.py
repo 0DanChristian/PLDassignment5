@@ -14,6 +14,7 @@
 # D                             Dropeed
 
 import math
+import decimal
 
 grade = int(input("Please enter your grade: "))
 # Uno
