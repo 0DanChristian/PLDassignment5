@@ -13,6 +13,8 @@
 # W                             Withdrawn
 # D                             Dropeed
 
+import math
+
 grade = int(input("Please enter your grade: "))
 # Uno
 if grade >= 97 and grade <= 100:
