@@ -15,80 +15,26 @@
 
 grade = int(input("Please enter your grade: "))
 # Uno
-if grade <= 100:
+if grade >= 97 and grade <= 100:
     print("1.0 is your grade! Excellent!")
-elif grade <= 99: 
-    print("1.0 is your grade! Excellent!")
-elif grade <= 98:
-    print("1.0 is your grade! Excellent!")
-elif grade <= 97:
-    print("1.0 is your grade! Excellent!")
-elif grade <= 96:
+elif grade >= 94 and grade <= 96:
     print("1.25 is your grade! Very Good!")
-elif grade <= 95:
-    print("1.25 is your grade! Very Good!")
-elif grade <= 94:
-    print("1.25 is your grade! Very Good!")
-elif grade <= 93:
+elif grade >= 91 and grade <= 93:
     print("1.5 is your grade! Very Good")
-elif grade <= 92:
-    print("1.5 is your grade! Very Good!")
-elif grade <= 91:
-    print("1.5 is your grade! Very Good!")
-elif grade <= 90:
+elif grade >= 88 and grade <= 90:
     print("1.75 is your grade! Very Good!") 
-elif grade <= 89:
-    print("1.75 is your grade! Very Good!") 
-elif grade <= 88:
-    print("1.75 is your grade! Very Good!")
-elif grade <= 87:
+elif grade >= 85 and grade <= 87:
     print("2.0 is your grade! It was good! keep it up ")
-elif grade <= 86:
-    print("2.0 is your grade! It was good! keep it up!")
-elif grade <= 85:
-    print("2.0 is your grade! It was good! keep it up!")
-elif grade <= 84:
+elif grade >= 82 and grade <= 84:
     print("2.25 is your grade! It was good! keep it up!")
-elif grade <= 83:
-    print("2.25 is your grade! It was good! keep it up!")
-elif grade <= 82:
-    print("2.25 is your grade! It was good! keep it up!")
-elif grade <= 81:
+elif grade >= 76 and grade <= 78:
     print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 80:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 79:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 78:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 77:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 76:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
-elif grade <= 75:
-    print("Your grade is 3.0, its passing. Keep it up! hard work pays off")
-elif grade <= 74:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 73:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 72:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 71:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 70:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 69:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 68:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 67:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 66:
-    print("Unfortunately, you failed. Your grade is 5.0")
-elif grade <= 65:
+elif grade >= 65 and grade <= 74:
     print("Unfortunately, you failed. Your grade is 5.0")
 
+elif grade <= 75:
+    print("Your grade is 3.0, its passing. Keep it up! hard work pays off")
 
 print("Done!")
 
-#first try
+# my 2nd attempt, it was much easier and less hassle this way
