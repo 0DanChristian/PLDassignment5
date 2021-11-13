@@ -14,9 +14,7 @@
 # D                             Dropeed
 
 import math
-import decimal
-
-grade = int(input("Please enter your grade: "))
+grade = float(input("Please enter your grade: "))
 # Uno
 if grade >= 97 and grade <= 100:
     print("1.0 is your grade! Excellent!")
@@ -37,6 +35,8 @@ elif grade >= 65 and grade <= 74:
 
 elif grade <= 75:
     print("Your grade is 3.0, its passing. Keep it up! hard work pays off")
+
+
 
 print("Done!")
 
