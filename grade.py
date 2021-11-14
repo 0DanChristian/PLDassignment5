@@ -25,16 +25,24 @@ elif grade >= 91 and grade <= 93:
     print("1.5 is your grade! Very Good")
 elif grade >= 88 and grade <= 90:
     print("1.75 is your grade! Very Good!") 
+
+# dos
 elif grade >= 85 and grade <= 87:
     print("2.0 is your grade! It was good! keep it up ")
 elif grade >= 82 and grade <= 84:
     print("2.25 is your grade! It was good! keep it up!")
 elif grade >= 76 and grade <= 78:
     print("2.75 is your grade! Satisfactory, keep it up buddy!")
+
+# tres
 elif grade <= 75:
-    print("Your grade is 3.0, its passing. Keep it up! hard work pays off")    
+    print("Your grade is 3.0, its passing. Keep it up! hard work pays off")   
+
+# failed 
 elif grade >= 65 and grade <= 74:
     print("Unfortunately, you failed. Your grade is 5.0")
+
+# inc,w,d
 else:
     print("Unfortunately, the student is either incomplete, withdrawn or dropped")
 
