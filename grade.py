@@ -21,7 +21,7 @@ if grade >= 97 and grade <= 100:
     print("1.0 is your grade! Excellent!")
 
 # Uno jr.
-elif grade >= 94 and grade <= 96:
+if grade >= 94 and grade <= 96:
     print("1.25 is your grade! Excellent!")
 elif grade >= 91 and grade <= 93:
     print("1.5 is your grade! Very Good")
