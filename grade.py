@@ -19,6 +19,8 @@ grade = round(grade)
 # Uno
 if grade >= 97 and grade <= 100:
     print("1.0 is your grade! Excellent!")
+
+# Uno jr.
 elif grade >= 94 and grade <= 96:
     print("1.25 is your grade! Excellent!")
 elif grade >= 91 and grade <= 93:
