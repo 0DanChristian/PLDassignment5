@@ -14,14 +14,19 @@
 # D                             Dropeed
 
 import math
-grade = float(input('Please enter your grade: '))
-grade = round(grade)
+def rounded_grade(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.floor(n*multiplier + 0.5) / multiplier
+    
+grAde = float(input('Please enter your grade: '))
+grade = rounded_grade(grAde)
+
 # Uno
 if grade >= 97 and grade <= 100:
     print("1.0 is your grade! Excellent!")
 
 # Uno jr.
-if grade >= 94 and grade <= 96:
+elif grade >= 94 and grade <= 96:
     print("1.25 is your grade! Excellent!")
 elif grade >= 91 and grade <= 93:
     print("1.5 is your grade! Very Good")
