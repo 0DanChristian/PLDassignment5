@@ -13,46 +13,56 @@
 # W                             Withdrawn
 # D                             Dropeed
 
-import math
-def rounded_grade(n, decimals=0):
-    multiplier = 10 ** decimals
-    return math.floor(n*multiplier + 0.5) / multiplier
+# greetings
+print("\33[1mWelcome! This will be your realization!")
     
-grAde = float(input('Please enter your \033[1mgrade: '))
-grade = rounded_grade(grAde)
+grAde = input('Please enter your \033[1mgrade: ')
 
-# Uno
-if grade >= 97 and grade <= 100:
-    print("\033[92m1.0 is your grade! Excellent!")
+if grAde.isdigit() == True:
+    rndd_grd = round(float(grAde))
+        # Uno
+    if rndd_grd >= 97 and rndd_grd <= 100:
+        print("\033[92m1.0 is your grade! Excellent!")
 
-# Uno jr.
-elif grade >= 94 and grade <= 96:
-    print("\033[92m1.25 is your grade! Excellent!")
-elif grade >= 91 and grade <= 93:
-    print("\033[92m1.5 is your grade! Very Good")
-elif grade >= 88 and grade <= 90:
-    print("\033[92m1.75 is your grade! Very Good!") 
+        # Uno jr.
+    elif rndd_grd >= 94 and rndd_grd <= 96:
+        print("\033[92m1.25 is your grade! Excellent!")
+    elif rndd_grd >= 91 and rndd_grd <= 93:
+        print("\033[92m1.5 is your grade! Very Good")
+    elif rndd_grd >= 88 and rndd_grd <= 90:
+        print("\033[92m1.75 is your grade! Very Good!") 
 
-# dos
-elif grade >= 85 and grade <= 87:
-    print("\033[93m2.0 is your grade! It was good! keep it up ")
-elif grade >= 82 and grade <= 84:
-    print("\033[93m2.25 is your grade! It was good! keep it up!")
-elif grade >= 76 and grade <= 78:
-    print("\033[93m2.75 is your grade! Satisfactory, keep it up buddy!")
+        # dos
+    elif rndd_grd >= 85 and rndd_grd <= 87:
+        print("\033[93m2.0 is your grade! It was good! keep it up ")
+    elif rndd_grd >= 82 and rndd_grd <= 84:
+        print("\033[93m2.25 is your grade! It was good! keep it up!")
+    elif rndd_grd >= 76 and rndd_grd <= 78:
+        print("\033[93m2.75 is your grade! Satisfactory, keep it up buddy!")
+
+        # failed 
+    elif rndd_grd >= 65 and rndd_grd <= 74:
+        print("\033[91mUnfortunately, you failed. Your grade is 5.0")
+
+        # tres    
+    elif rndd_grd <= 75:
+        print("\033[93mYour grade is 3.0, its passing. Keep it up! hard work pays off") 
+
+        # inc,w,d
+else:
+    special_case = grAde.title()
+        # inc
+    if grAde == "Incomplete" or grAde == "INCOMPLETE" or grAde == "incomplete" or grAde == "INC." or grAde == "Inc." or grAde == "inc." or grAde == "inc":
+        print("Given the data provided, the case of this student is \033[91mIncomplete.")
+        # withdrawn
+    if grAde == "Withdrawn" or grAde == "withdrawn" or grAde == "w" or grAde == "W":
+        print("Given the date provided, this student has \33[93mwithdrawn.")
+        # dropped
+    if grAde == "Dropped" or grAde == "dropped" or grAde == "d" or grAde == "D":
+        print("Given the data provided, this student has already \33[1mdropped.")
 
 
-# failed 
-elif grade >= 65 and grade <= 74:
-    print("\033[91mUnfortunately, you failed. Your grade is 5.0")
-
-# tres    
-elif grade <= 75:
-    print("\033[93mYour grade is 3.0, its passing. Keep it up! hard work pays off") 
-# inc,w,d
 
 
 
-print("\033[1mDone!")
 
-# my 2nd attempt, it was much easier and less hassle this way
