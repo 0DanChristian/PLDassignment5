@@ -50,8 +50,7 @@ elif grade >= 65 and grade <= 74:
     print("Unfortunately, you failed. Your grade is 5.0")
 
 # inc,w,d
-else:
-    print("Unfortunately, the student is either incomplete, withdrawn or dropped")
+
 
 
 print("Done!")
