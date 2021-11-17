@@ -13,16 +13,18 @@
 # W                             Withdrawn
 # D                             Dropeed
 
+import math
+
 # greetings
 print("\33[1mWelcome! This will be your realization!")
-import math
+
 def rounded_grade(n, decimals=0):
     multiplier = 10 ** decimals
     return math.floor(n*multiplier + 0.5) / multiplier
     
-grAde = float(input('Please enter your \033[1mgrade: '))
+grAde = input('Please enter your \033[1mgrade: ')
 
-if grAde.isdigit() == True:
+if grAde.replace(".","",2).isdigit() == True:
     rndd_grd = rounded_grade(float(grAde))
         # Uno
     if rndd_grd >= 97 and rndd_grd <= 100:
