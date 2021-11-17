@@ -15,11 +15,15 @@
 
 # greetings
 print("\33[1mWelcome! This will be your realization!")
+import math
+def rounded_grade(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.floor(n*multiplier + 0.5) / multiplier
     
-grAde = input('Please enter your \033[1mgrade: ')
+grAde = float(input('Please enter your \033[1mgrade: '))
 
 if grAde.isdigit() == True:
-    rndd_grd = round(float(grAde))
+    rndd_grd = rounded_grade(float(grAde))
         # Uno
     if rndd_grd >= 97 and rndd_grd <= 100:
         print("\033[92m1.0 is your grade! Excellent!")
