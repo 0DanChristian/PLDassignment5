@@ -18,41 +18,41 @@ def rounded_grade(n, decimals=0):
     multiplier = 10 ** decimals
     return math.floor(n*multiplier + 0.5) / multiplier
     
-grAde = float(input('Please enter your grade: '))
+grAde = float(input('Please enter your \033[1mgrade: '))
 grade = rounded_grade(grAde)
 
 # Uno
 if grade >= 97 and grade <= 100:
-    print("1.0 is your grade! Excellent!")
+    print("\033[92m1.0 is your grade! Excellent!")
 
 # Uno jr.
 elif grade >= 94 and grade <= 96:
-    print("1.25 is your grade! Excellent!")
+    print("\033[92m1.25 is your grade! Excellent!")
 elif grade >= 91 and grade <= 93:
-    print("1.5 is your grade! Very Good")
+    print("\033[92m1.5 is your grade! Very Good")
 elif grade >= 88 and grade <= 90:
-    print("1.75 is your grade! Very Good!") 
+    print("\033[92m1.75 is your grade! Very Good!") 
 
 # dos
 elif grade >= 85 and grade <= 87:
-    print("2.0 is your grade! It was good! keep it up ")
+    print("\033[93m2.0 is your grade! It was good! keep it up ")
 elif grade >= 82 and grade <= 84:
-    print("2.25 is your grade! It was good! keep it up!")
+    print("\033[93m2.25 is your grade! It was good! keep it up!")
 elif grade >= 76 and grade <= 78:
-    print("2.75 is your grade! Satisfactory, keep it up buddy!")
+    print("\033[93m2.75 is your grade! Satisfactory, keep it up buddy!")
 
-# tres
-elif grade <= 75:
-    print("Your grade is 3.0, its passing. Keep it up! hard work pays off")   
 
 # failed 
 elif grade >= 65 and grade <= 74:
-    print("Unfortunately, you failed. Your grade is 5.0")
+    print("\033[91mUnfortunately, you failed. Your grade is 5.0")
 
+# tres    
+elif grade <= 75:
+    print("\033[93mYour grade is 3.0, its passing. Keep it up! hard work pays off") 
 # inc,w,d
 
 
 
-print("Done!")
+print("\033[1mDone!")
 
 # my 2nd attempt, it was much easier and less hassle this way
